@@ -13,6 +13,11 @@ function run_command() {
 
 echo "Starting YDLidar ROS2 Driver Installation..."
 
+# Check for colcon 
+if ! command -v colcon &> /dev/null; then
+    run_command "sudo apt install python3-colcon-common-extensions"
+fi
+
 # Step 1: Create Workspace Directory
 run_command "mkdir ~/ydlidar_ws"
 run_command "cd ~/ydlidar_ws"
