@@ -11,6 +11,15 @@ ydlidar_ros2_driver is a new ros package, which is designed to gradually become 
 ## How to Create a ROS2 workspace
 [Create a workspace](https://index.ros.org/doc/ros2/Tutorials/Colcon-Tutorial/#create-a-workspace)
 
+# Script Install:
+Open Terminal and execute :
+```
+curl -o install.sh https://raw.githubusercontent.com/karanS08/ydlidar_ros2_driver/master/install.sh
+chmod +x install.sh
+./install.sh
+```
+
+# Manual Install:
 
 ## Compile & Install YDLidar SDK
 
@@ -63,6 +72,7 @@ ydlidar_ros2_driver depends on YDLidar-SDK library. If you have never installed 
 	$sudo sh src/ydlidar_ros2_driver/startup/initenv.sh
     ```
     Note: After completing the previous operation, replug the LiDAR again.
+
 	
 ## Configure LiDAR
 
